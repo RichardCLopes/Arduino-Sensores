@@ -18,7 +18,7 @@ void loop() {
     Serial.println("SENSOR NAO CONECTADO"); // Sensor conectado, imprime mensagem de erro
   } else {
     Serial.print("Temperatura = "); // Imprime a temperatura no monitor serial
-    Serial.print(sensor.getTempC(endereco_temp), 1);
+    Serial.print(sensor.getTempC(endereco_temp), 2);
     Serial.println("ºC");// Busca temperatura para dispositivo
   }
   delay(1000);

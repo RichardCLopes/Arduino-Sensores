@@ -4,7 +4,7 @@
 #define TdsSensorPin A1
 GravityTDS gravityTds;
  
-float temperature = 25,tdsValue = 0;
+float temperature = 25, tdsValue = 0;
  
 void setup()
 {

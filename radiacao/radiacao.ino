@@ -1,10 +1,4 @@
-
-// DEFINIÇÕES DE PINOS
-#define pinLedVermelho 6
-#define pinLedAmarelo  4
-#define pinLedVerde    2
 #define pinSensorUV    A0
-#define divisor        20
 
 // DECLARAÇÃO DE VARIÁVEIS	
 int leituraUV=0; // VARIÁVEL PARA ARMAZENAR A LEITURA DA PORTA ANALÓGICA
@@ -12,9 +6,7 @@ byte indiceUV=0; // VARIÁVEL PARA ARMAZENAR A CONVERSÃO PARA INDICE UV
 
 void setup() {
 	Serial.begin(9600);
-
   pinMode(pinSensorUV, INPUT);
-  
 }
 
 void loop() {

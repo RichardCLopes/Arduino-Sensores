@@ -5,7 +5,7 @@
 //Caso não tenha os materiais, é possivel calibrar utilizando outros elementos, cujo saiba o pH
 //Se for possível calibrar o potenciometro do analogico utilizado em 2.5V a fórmula é -5.7 * X -21.24
 
-int ph_pin = A0; 
+int ph_pin = A4; 
 //float valor_calibracao = 21.34;
 float valor_calibracao = 26.8;
 //float multi = -5.7;
@@ -25,7 +25,7 @@ void loop() {
   Serial.print(voltage, 3);
 
   //se tiver calibrado em 2.5V, use este
-  float Po = 7 + ((2.5 - voltage / 0.18);
+  float Po = 7 + ((2.5 - voltage) / 0.18);
   Serial.print("\tPH: ");
   Serial.print(Po, 3);
 
